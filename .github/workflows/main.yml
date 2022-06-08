@@ -1,0 +1,14 @@
+on: pull_request
+# com
+jobs:
+  checkstyle_job:
+    runs-on: ubuntu-latest
+    name: Checkstyle job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run checkstyle
+        uses: ViMatviienko/checkstyle-github-action@main
+        with:
+          github_token: ${{ github.token }}
+          reporter: 'github-pr-review'

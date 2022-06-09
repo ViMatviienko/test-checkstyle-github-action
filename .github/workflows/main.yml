@@ -1,5 +1,5 @@
 on: pull_request
-# com
+
 jobs:
   checkstyle_job:
     runs-on: ubuntu-latest

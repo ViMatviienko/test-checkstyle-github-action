@@ -1,5 +1,5 @@
 on: pull_request
-# com
+
 jobs:
   checkstyle_job:
     runs-on: ubuntu-latest
@@ -13,4 +13,3 @@ jobs:
           github_token: ${{ github.token }}
           reporter: 'github-pr-review'
           checkstyle_config: ${{ github.workspace }}/checkstyle/cloud.xml
-          

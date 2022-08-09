@@ -22,6 +22,7 @@ public class main {
     public String wrong_naming_;
 
     private int hardcoding = 7;
+    private int wrong_name = 7;
 
     public static void Main(String[] args) {}
 

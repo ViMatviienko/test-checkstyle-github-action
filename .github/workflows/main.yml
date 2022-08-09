@@ -1,4 +1,7 @@
-on: pull_request
+on:
+  pull_request:
+    paths:
+      - '**.java'
 
 jobs:
   checkstyle_job:
@@ -12,4 +15,5 @@ jobs:
         with:
           github_token: ${{ github.token }}
           reporter: 'github-pr-review'
+          level: 'warning'
           checkstyle_config: ${{ github.workspace }}/checkstyle/cloud.xml

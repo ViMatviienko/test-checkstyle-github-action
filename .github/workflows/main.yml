@@ -14,5 +14,6 @@ jobs:
         uses: ViMatviienko/checkstyle-github-action@main
         with:
           github_token: ${{ github.token }}
+          level: 'warning'
           reporter: 'github-pr-review'
           checkstyle_config: ${{ github.workspace }}/checkstyle/cloud.xml

@@ -13,7 +13,7 @@ jobs:
       - name: Run checkstyle
         uses: ViMatviienko/checkstyle-github-action@main
         with:
-          github_token: ${{ github.token }}
-          reporter: 'github-pr-review'
+          review_secret: ${{ secrets.PAT }}
           level: 'warning'
+          reporter: 'github-pr-review'
           checkstyle_config: ${{ github.workspace }}/checkstyle/cloud.xml
